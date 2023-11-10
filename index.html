@@ -16,7 +16,9 @@
     </header>
 
     <header>
-      <button aria-controls="mainNav">menu</button>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
+        menu
+      </button>
       <h1>Test de menu</h1>
       <!-- nav#mainNav>ul>li*3>a[href="#"]{item$} -->
     </header>
