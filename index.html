@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-
+<style>
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    display: grid;
+    place-content: center;
+  }
+  .header_menuBtn {
+    position: relative;
+    z-index: 10;
+  }
+</style>
   </head>
   <body>
     <!-- https://emmet.io/ -->
