@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+
   </head>
   <body>
     <!-- https://emmet.io/ -->
@@ -16,14 +17,18 @@
     </header>
 
     <header>
-      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+      class="header_menuBtn"
+      >
         menu
       </button>
       <h1>Test de menu</h1>
       <!-- nav#mainNav>ul>li*3>a[href="#"]{item$} -->
     </header>
 <header>
-      <nav id="mainNav"x-show="menuIsOpen" x-transition.duration.1000ms>
+      <nav id="mainNav"x-show="menuIsOpen" x-transition.duration.1000ms
+      class="menu"
+      >
         <ul>
           <li><a href="#">item1</a></li>
           <li><a href="#">item2</a></li>
