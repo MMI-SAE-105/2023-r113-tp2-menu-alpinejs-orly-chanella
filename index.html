@@ -27,11 +27,15 @@
   <body>
     <header>
       <button>menu</button>
-      <h1>Page d'accueil</h1>
-      <a href="fr/">Page d'accueil</a>
-      <a href="en/">Home page</a>
+      <h1>Site Multilingue</h1>
+      <a href="fr/">fr</a>
+      <a href="en/">en</a>
     </header>
-
+    <script>
+      function setLanguageCookie(lang) {
+          document.cookie = `nf_lang=${lang}; path=/; SameSite=Strict`;
+      }
+  </script>
     <!--header>
       <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
       class="header_menuBtn"
